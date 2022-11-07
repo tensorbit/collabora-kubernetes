@@ -6,18 +6,18 @@ metadata:
   labels:
     {{- include "collabora-online.labels" . | nindent 4 }}
 spec:
-# terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
-#  minReadySeconds: {{ .Values.deployment.minReadySeconds }}
-#  {{- if not .Values.autoscaling.enabled }}
-#  replicas: {{ .Values.replicaCount }}
-#  {{- end }}
-#  strategy:
-#    type: {{ .Values.deployment.type }}
-#    {{- if eq .Values.deployment.type "RollingUpdate"}}
-#    rollingUpdate:
-#      maxSurge: {{ .Values.deployment.maxSurge }}
-#      maxUnavailable: {{ .Values.deployment.maxUnavailable }}
-#    {{- end}}
+  # terminationGracePeriodSeconds: {{ .Values.terminationGracePeriodSeconds }}
+  minReadySeconds: {{ .Values.deployment.minReadySeconds }}
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  strategy:
+    type: {{ .Values.deployment.type }}
+    {{- if eq .Values.deployment.type "RollingUpdate"}}
+    rollingUpdate:
+      maxSurge: {{ .Values.deployment.maxSurge }}
+      maxUnavailable: {{ .Values.deployment.maxUnavailable }}
+    {{- end}}
   selector:
     matchLabels:
       {{- include "collabora-online.selectorLabels" . | nindent 6 }}
