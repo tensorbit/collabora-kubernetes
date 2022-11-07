@@ -11,7 +11,7 @@ To install the repo just run:
 
 ```bash
 helm repo add collabora https://raw.githubusercontent.com/tensorbit/collabora-kubernetes/main/
-helm repo update
+helm install colloabora collabora --namespace=production --values=collabora/install-values.yml
 ```
 
 How to test this specific setup:
