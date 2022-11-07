@@ -1,9 +1,9 @@
 apiVersion: v2
 type: "application"
-name: collabora-online
+name: collabora
 description: Collabora Online helm chart
 
-version: 1.0.0
+version: 1.0.1
 appVersion: "22.05.6.3.1"
 
 home: "https://www.collaboraoffice.com/code/"

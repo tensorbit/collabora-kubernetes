@@ -1,6 +1,6 @@
 #!/bin/bash
 
-helm package ./ -d build/
+helm package ./charts/collabora -d build/
 helm repo index ./
 # sed 's+build+head+g' ./index.yaml > ./index.yaml
 
