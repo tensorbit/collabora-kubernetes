@@ -3,7 +3,39 @@ entries:
   collabora:
   - apiVersion: v2
     appVersion: 22.05.6.3.1
-    created: "2022-11-07T03:50:20.972051-06:00"
+    created: "2022-11-07T03:54:31.830384-06:00"
+    description: Collabora Online helm chart
+    digest: 450dec9d84528258570c4cb48431526de778494521c276adbb562f15287fdfb2
+    home: https://www.collaboraoffice.com/code/
+    icon: https://avatars0.githubusercontent.com/u/22418908?s=200&v=4
+    keywords:
+    - collabora-online
+    - collabora
+    - code
+    - nextcloud
+    - office
+    maintainers:
+    - email: k.erber@erber-freelance.de
+      name: Klaus Erber
+      url: https://www.erber-freelance.de/
+    - email: martin.mueller@dataport.de
+      name: Martin Müller
+      url: https://dphoenixsuite.de
+    - email: geno+dev@fireorbit.de
+      name: Geno
+      url: https://fireorbit.de
+    name: collabora
+    sources:
+    - https://github.com/CollaboraOnline/online
+    - https://github.com/CollaboraOnline/online/tree/master/docker
+    - https://github.com/CollaboraOnline/online/tree/master/kubernetes/helm/collabora-online
+    type: application
+    urls:
+    - https://raw.githubusercontent.com/tensorbit/collabora-kubernetes/main/build/collabora-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 22.05.6.3.1
+    created: "2022-11-07T03:54:31.828461-06:00"
     description: Collabora Online helm chart
     digest: 67f53451054d3d256cfa83c42ecccb2d747d9838a3854ecf2536b0afe3db6bb0
     home: https://www.collaboraoffice.com/code/
@@ -35,7 +67,7 @@ entries:
     version: 1.0.2
   - apiVersion: v2
     appVersion: 22.05.6.3.1
-    created: "2022-11-07T03:50:20.970705-06:00"
+    created: "2022-11-07T03:54:31.82465-06:00"
     description: Collabora Online helm chart
     digest: 98da50cf628bde25fa626e1e5200b0798f749a317aa16086d8f2d06fbf0d4b1a
     home: https://www.collaboraoffice.com/code/
@@ -65,4 +97,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/tensorbit/collabora-kubernetes/main/build/collabora-1.0.1.tgz
     version: 1.0.1
-generated: "2022-11-07T03:50:20.967099-06:00"
+generated: "2022-11-07T03:54:31.822535-06:00"
